@@ -5,7 +5,10 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello, Docker!'
 
-
 @app.route('/goodbye')
-def hello_world():
+def goodbye_world():
     return 'Goodbye, Docker!'    
+
+@app.route('/testing/')
+def test_world():
+    return 'This is a test, Docker!'    
